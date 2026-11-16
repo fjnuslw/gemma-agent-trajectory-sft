@@ -1,0 +1,123 @@
+{
+  "as_of": "2026-11-16",
+  "scope": "EXPOSED_DEVELOPMENT_RESULTS_NOT_HIDDEN_GENERALIZATION",
+  "c03_dataset": {
+    "target_turns": 990,
+    "task_ids": 160,
+    "local_turns": 720,
+    "external_native_turns": 233,
+    "external_a_turns": 37,
+    "input_positions": 12199343,
+    "positive_tokens": 199458,
+    "action_boundary_tokens": 156980,
+    "explanation_tokens": 42478,
+    "max_sequence_length": 26910,
+    "truncated": false,
+    "stages": {
+      "identify": 313,
+      "edit": 271,
+      "verify": 195,
+      "recover_finish": 211
+    }
+  },
+  "c03_recipe": {
+    "rank": 16,
+    "alpha": 16,
+    "dropout": 0.05,
+    "layers": 60,
+    "projections": 410,
+    "trainable_parameters": 122429440,
+    "global_batch": 8,
+    "passes": 1,
+    "updates": 124,
+    "warmup_updates": 7,
+    "peak_lr": 0.0001,
+    "final_lr": 1e-05,
+    "checkpoints": [
+      31,
+      62,
+      93,
+      124
+    ]
+  },
+  "c03_status": {
+    "training": "USER_REPORTED_23_OF_124_AWAITING_RAW_RETURN",
+    "checkpoint_panel": "HANDOFF_READY_TARGET_NOT_CONFIRMED_EXECUTED",
+    "panel_task_runs": 96,
+    "exact_resume_entry": "NOT_IMPLEMENTED"
+  },
+  "full_development_results": [
+    {
+      "candidate": "base",
+      "temperature": 0.2,
+      "resolved": 51,
+      "tasks": 129
+    },
+    {
+      "candidate": "C01",
+      "temperature": 0.2,
+      "resolved": 48,
+      "tasks": 129
+    },
+    {
+      "candidate": "C01",
+      "temperature": 1.0,
+      "resolved": 52,
+      "tasks": 129
+    }
+  ],
+  "partial_development_results": [
+    {
+      "candidate": "C02",
+      "temperature": 0.2,
+      "resolved": 2,
+      "completed": 10,
+      "planned": 129,
+      "same_window_C01_resolved": 4,
+      "status": "ACTIVELY_INTERRUPTED_NONRANDOM"
+    },
+    {
+      "candidate": "C02",
+      "temperature": 1.0,
+      "resolved": 1,
+      "completed": 6,
+      "planned": 129,
+      "same_window_C01_resolved": 3,
+      "status": "ACTIVELY_INTERRUPTED_NONRANDOM"
+    }
+  ],
+  "historical_training_C02": {
+    "updates": 524,
+    "actual_row_consumptions": 4180,
+    "longest_sequence": 26979,
+    "loop_hours": 13.594,
+    "memory_measurement_scope": "SPECIFIED_TRAINING_WINDOW_NOT_WHOLE_LIFECYCLE",
+    "allocated_gib": 52.7096,
+    "longest_reserved_gib_range": [
+      59.45,
+      62.85
+    ]
+  },
+  "serving": {
+    "native_tensors": 820,
+    "serving_tensors": 840,
+    "shared_kv_copies": 20
+  },
+  "one_lean_return": {
+    "original_bytes": 1706923496,
+    "analysis_bytes": 154622101,
+    "reduction_percent": 90.94,
+    "http_files": 21093,
+    "http_groups": 7031,
+    "adk_observations_files": 1030,
+    "scope": "ONE_EXACTLY_VERIFIED_RETURN_NOT_GENERAL_COMPRESSION_RATIO"
+  },
+  "limitations": [
+    "Local 129 tasks were exposed during development/training",
+    "Current matching base T1 control is missing",
+    "No multi-seed or isolated hyperparameter causal conclusion",
+    "External holdout environments not rebuilt",
+    "C03 full training/checkpoint behavior not yet accepted",
+    "No GRPO, DPO or online RL was executed in this project"
+  ]
+}

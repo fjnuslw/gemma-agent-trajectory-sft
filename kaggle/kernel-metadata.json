@@ -1,0 +1,17 @@
+{
+  "id": "fjnulinweisong/gemma-agent-trajectory-sft",
+  "title": "Gemma Agent Trajectory SFT",
+  "code_file": "gemma-agent-trajectory-sft.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "dataset_sources": [],
+  "competition_sources": [
+    "gemma-4-developer-agent"
+  ],
+  "kernel_sources": [],
+  "model_sources": []
+}
